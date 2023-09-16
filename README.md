@@ -6,3 +6,5 @@ Whichever movie you choose in this data set, the model gives you 5 similar movie
 Note: You must write the full name of the movies and check the excel files for the full name of the movies. 
 
 How its work : Run the code and then write full name of the movie in console section.
+
+This project is example for the Collaborative Filtering in the Recommendation Systems.
