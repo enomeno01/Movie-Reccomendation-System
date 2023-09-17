@@ -21,13 +21,13 @@ benzerlik_matrisi = pairwise_distances(pivot, metric="correlation")
 
 indeksler = list(pivot.index)
 
-film_adi = input("Benzerlik aramak istediğiniz film adını girin: ")
+film_adi = input("Enter the movie name you want to search for similarities with: ")
 if film_adi in indeksler:
     film_indeks = indeksler.index(film_adi)
     benzer_indeksler = benzerlik_matrisi[film_indeks].argsort()[1:6]
 
-    print(f"{film_adi} için benzer filmler:")
+    print(f"Similar movies for {film_adi} :")
     for i in benzer_indeksler:
         print(indeksler[i])
 else:
-    print(f"{film_adi} adlı bir film bulunamadı.")
+    print(f"Movie named {film_adi} not found.")
